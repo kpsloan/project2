@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Television</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="./stylesheets/landing.css" />
+
+</head>
+
+
+<body>
+
+    <main>
+        <div id="main">
+
+            <div class="container" id="landing">
+
+                <svg viewBox="0 0 1418 116" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <title>Television</title>
+                    <g stroke="white" fill="white" fill-rule="evenodd" fill-opacity="0">
+                        <text id="television" stroke="#fff" fill="#645F5A" font-weight="bold" font-family="PermanentMarker-Regular, Permanent Marker" font-size="144">
+                            <tspan x="275" y="109"><!--
+                                --><tspan>T</tspan><!--
+                                --><tspan>E</tspan><!--
+                                --><tspan>L</tspan><!--
+                                --><tspan>E</tspan><!--
+                                --><tspan>V</tspan><!--
+                                --><tspan>I</tspan><!--
+                                --><tspan>S</tspan><!--
+                                --><tspan>I</tspan><!--
+                                --><tspan>O</tspan><!--
+                                --><tspan>N</tspan><!--
+                            --></tspan>
+                        </text>
+                    </g>
+                </svg>
+
+            </div>
+
+            <div id="filter">
+                <span id='click'><i class="large material-icons animated fadeIn delay-3s slower" id="filterIcon">filter_list</i></span>
+            </div>
+
+        </div>
+    </main>
+
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <div class="row">
+                <div class="input-field col s6" id="signUp">
+                    <span id="signUp">
+                        <h5>Sign Up</h5>
+                    </span>
+                </div>
+                <div class="input-field col s6" id="login">
+                    <span id="login">
+                        <h5>Login</h5>
+                    </span>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <form class="signup">
+            <div class="modal-content">
+                <div class="row">
+                
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="email-input1" type="text" class="email-input">
+                            <label for="exampleInputEmail1">User Name (Email)</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="password-input1" type="password" class="password-input">
+                            <label for="exampleInputPassword1">Password</label>
+                        </div>
+
+                    </div>
+                
+                </div>
+            </div>
+            <div class="modal-footer" id="modal-footer">
+                <span id="back"><i class="tiny material-icons" id="back">arrow_back</i></span>
+                <button class="btn-small transparent text-white waves-effect waves-white" id="yay" type="submit" name="action">Sign Up</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="modal3" class="modal">
+        <form class="login">
+            <div class="modal-content">
+                <div class="row">
+                
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input id="email-input2" type="text" class="email-input">
+                            <label for="exampleInputEmail1">User Name (Email)</label>
+                        </div>
+                        <div class="input-field col s6">
+                            <input id="password-input2" type="password" class="password-input">
+                            <label for="exampleInputPassword1">Password</label>
+
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="modal-footer" id="modal-footer">
+                <span id="back2"><i class="tiny material-icons" id="back2">arrow_back</i></span>
+                <button class="btn-small transparent text-white waves-effect waves-white" id="go" type="submit" name="action">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script type="text/javascript">
+
+
+        $('#click').on('click', function (event) {
+            event.preventDefault();
+            $('.modal').modal({
+                dismissible: false,
+                opacity: .5,
+                inDuration: 300,
+                outDuration: 200,
+                startingTop: '50%',
+                endingTop: '55%'
+            });
+            $('#modal1').modal('open');
+
+        });
+
+        $('#signUp').on('click', function (event) {
+            event.preventDefault();
+            $('.modal').modal({
+                dismissible: false,
+                opacity: .5,
+                inDuration: 300,
+                outDuration: 200,
+                startingTop: '50%',
+                endingTop: '55%'
+            });
+            $('#modal2').modal('open');
+
+        });
+
+        $('#login').on('click', function (event) {
+            event.preventDefault();
+            $('.modal').modal({
+                dismissible: false,
+                opacity: .5,
+                inDuration: 300,
+                outDuration: 200,
+                startingTop: '50%',
+                endingTop: '55%'
+            });
+            $('#modal3').modal('open');
+
+        });
+
+        $('#back').on('click', function (event) {
+            event.preventDefault();
+            $('#modal2').modal('close');
+            $('#modal1').modal('open');
+
+        });
+
+        $('#back2').on('click', function (event) {
+            event.preventDefault();
+            $('#modal3').modal('close');
+            $('#modal1').modal('open');
+
+        });
+
+
+        // $('#yay').on('click', function (event) {
+        //     event.preventDefault();
+        //     window.location = "/members"
+        // });
+
+        // $('#go').on('click', function (event) {
+        //     event.preventDefault();
+        //     window.location = "/members"
+        // });
+
+
+    </script>
+
+<script type="text/javascript" src="/assets/js/util.js"></script>
+<script type="text/javascript" src="/assets/js/login.js"></script>
+<script type="text/javascript" src="/assets/js/signup.js"></script>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+

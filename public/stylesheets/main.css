@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+body {
+  background-image: url("../assets/images/natwhite.png");
+  height: 100%;
+  font-family: 'Dosis', sans-serif;
+  color: #98a3ae;
+}
+
+.nav-wrapper {
+  color: #7C8B93;
+  background-image: url("../assets/images/natwhite.png");
+  border: none;
+}
+
+#ca {
+  text-indent: 60px;
+  font-size: 30px;
+}
+
+#logout {
+  font-size: 10px;
+
+}
+
+ul {
+  font-size: 16px;
+  
+
+}
+
+#tv {
+  height: 60px;
+}
+
+.icon {
+  color: #e09b34;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#leave {
+  cursor: pointer;
+}
+
+#showname {
+  font-size: 16px;
+}
+
+h1 {
+  color: #F2931F;
+  text-align: center;
+}
+
+h2 {
+  color: #63ab6c;
+}
+
+h4 {
+  color: #63ab6c;
+}
+
+#add {
+  color: #e09b34;
+  background-color: Transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.brand-logo {
+  margin-left: 20px;
+  cursor: default;
+  color: #7C8B93;
+}
+
+.shows {
+  text-align: center;
+}
+
+#seen {
+  text-align: right;
+  font-size: 20px;
+  font-weight: 600;
+  padding-bottom: 20px;
+}
+
+
+.change-sleep {
+  background-color: Transparent;
+  border: none;
+}
+
+.delete-show {
+  background-color: Transparent;
+  border: none;
+}
+
+#show-data {
+  color: #36353B;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 32px;
+}
+
+#magnify {
+  padding-top: 10px;
+}
+
+#bye {
+  padding-top: 10px;
+}
+
+.rad {
+  font-size: 32px;
+  font-weight: 400;
+}

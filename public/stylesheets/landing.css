@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+
+body {
+  background-image: url("../assets/images/natblack.png");
+  
+  height: 100%;
+}
+
+#main {
+  height: 1vh;
+}
+
+.container {
+	background-image: url("../assets/images/natblack.png");
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 90vh;
+	width: 100%;
+	height: 100%;
+  }
+  .container svg {
+	max-width: 45rem;
+	width: 100%;
+	height: auto;
+	fill: white;
+	stroke: white;
+	stroke-width: 4;
+  }
+  .container svg tspan > tspan {
+	stroke-dasharray: 1500;
+	stroke-dashoffset: -1500;
+  }
+  .container svg tspan > tspan:nth-of-type(1) {
+	animation: draw 300ms 150ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(2) {
+	animation: draw 300ms 300ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(3) {
+	animation: draw 300ms 450ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(4) {
+	animation: draw 300ms 600ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(5) {
+	animation: draw 300ms 750ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(6) {
+	animation: draw 300ms 900ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(7) {
+	animation: draw 300ms 1050ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(8) {
+	animation: draw 300ms 1200ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(9) {
+	animation: draw 300ms 1350ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(10) {
+	animation: draw 300ms 1500ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(11) {
+	animation: draw 300ms 1650ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(12) {
+	animation: draw 300ms 1800ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(13) {
+	animation: draw 300ms 1950ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(14) {
+	animation: draw 300ms 2100ms forwards;
+  }
+  .container svg tspan > tspan:nth-of-type(15) {
+	animation: draw 300ms 2250ms forwards;
+  }
+  
+  @keyframes draw {
+	100% {
+	  stroke-dashoffset: 0;
+	}
+  }
+  #filter {
+	text-align: center;
+	color: #fff;
+  }
+  
+  #filterIcon {
+	left: 50%;
+	font-size: 50px;
+  }
+
+  .modal {
+    color: #fff;
+    background-image: url("../assets/images/natblack.png");
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    opacity: 0;
+    -webkit-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+  }
+
+  #modal-footer {
+    color: #fff;
+    background-image: url("../assets/images/natblack.png");
+  }
+
+  #click {
+    cursor: pointer
+}
+
+h5 {
+  text-align: center;
+}
+
+#signUp {
+  cursor: pointer
+}
+
+#login {
+  cursor: pointer
+}
+
+button {
+  color: #fff;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#back {
+  cursor: pointer;
+  
+}
+
+#back2 {
+  cursor: pointer;
+  
+}
+
+input, select, textarea { 
+  color: white; 
+  font-family: 'Permanent Marker', cursive;
+  
+  }
